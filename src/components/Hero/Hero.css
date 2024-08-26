@@ -5,10 +5,10 @@
     align-items: center;
     gap: 2rem;
     padding-top: 5rem;
-    padding-bottom: 3rem;
+    padding-bottom: 8rem;
     background-image: url("../../assets/images/hero_bg.png");
-    background-position: center;
-    background-size: contain;
+    background-position: 0 -4rem;
+    background-repeat: no-repeat;
 }
 .hero h1{
     text-align: center;
@@ -20,6 +20,9 @@
     font-size: 1.4rem;
     text-align: center;
     color: #60697B;
+}
+.hero-txt-span{
+    color: #605dba;
 }
 .hero-btns{
     display: flex;
