@@ -1,0 +1,75 @@
+.hero{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    background-image: url("../../assets/images/hero_bg.png");
+    background-position: center;
+    background-size: contain;
+}
+.hero h1{
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+.hero p{
+    width: 51%;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #60697B;
+}
+.hero-btns{
+    display: flex;
+    gap: 2rem;
+}
+.join-btn,
+.donate-btn{
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+}
+.doodle1{
+    position: absolute;
+    left: 7rem;
+    top: 7rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    animation: rotation 4s ease-in-out infinite;
+}
+.doodle2{
+    position: absolute;
+    bottom: 4rem;
+    left: 9rem;
+    width: 3rem;
+    height: 3rem;
+    animation: rotation 4s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+.doodle3{
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 7rem;
+    right: 9rem;
+    animation: rotation 4s ease-in-out infinite;
+}
+.doodle4{
+    position: absolute;
+    bottom: 4rem;
+    width: 2rem;
+    height: 2rem;
+    right: 7rem;
+    animation: rotation 4s ease-in-out infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+  }

@@ -1,13 +1,15 @@
 import React from 'react'
-import Navbar from "./components/Navbar/Navbar"
-import Tools from "./components/Tools/Tools"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Home from "./pages/Home/Home"
 import "./App.css"
+
 const App = () => {
   return (
-    <>
-      <Navbar />
-      <Tools />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={ <Home />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

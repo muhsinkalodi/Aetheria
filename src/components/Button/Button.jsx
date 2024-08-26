@@ -1,10 +1,15 @@
 import React from 'react'
-
-const Button = () => {
+import "./Button.css"
+import { GoPeople } from "react-icons/go";
+import { Link } from 'react-router-dom';
+const Button = (props) => {
+    const { className, text, icon, to } = props;
+    const iconMap = {
+        people: <GoPeople />,
+    }
+    const selectedIcon = iconMap[icon] || null
   return (
-      <div>
-          <button>Login</button>
-    </div>
+      <Link to={to}><div className={`btn ${className}`}>{text} { selectedIcon } </div></Link>
   )
 }
 
