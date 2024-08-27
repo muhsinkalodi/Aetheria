@@ -142,6 +142,7 @@
         left: 0.5rem;
     }
     .nav-social-on{
+        z-index: 11111;
         position: absolute;
         display: block;
         bottom: 1rem;
@@ -159,12 +160,22 @@
         color: white;
     }
 }
-@media(max-width){
+@media(max-width:500px){
+    .navbar-menu-icon{
+        right: 1rem;
+    }
+    .navbar{
+        padding-left: 0.7rem;
+    }
     .nav-on{
-        width: 80% !important;
+        width: 80%;
+    }
+    .nav-on::after{
+        overflow: hidden;
+        left: 100%;
+        width: 25%;
     }
 }
-
 @keyframes slideIn {
     0%{
         transform: translateX(-100%);

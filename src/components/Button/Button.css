@@ -3,6 +3,12 @@
     padding:0.8rem 2rem;
     border-radius: 5px;
     font-weight: 600;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+}
+.btn-icon{
+    font-size: larger;
 }
 .blue-btn{
     background-color: #605dba;

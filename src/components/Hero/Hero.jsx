@@ -6,6 +6,8 @@ import Doodle2 from "../../assets/svg/hero-doodle2.svg";
 import Doodle3 from "../../assets/svg/hero-doodle3.svg";
 import Doodle4 from "../../assets/svg/hero-doodle4.svg";
 import { motion } from "framer-motion";
+import { BsPeopleFill } from "react-icons/bs";
+
 
 const Hero = () => {
     const [selectedText, setSelectedText] = useState("Excel");
@@ -36,7 +38,7 @@ const Hero = () => {
                     transition={{ duration: 1, stiffness:20, type:"spring" }} // Transition duration
                 >
                      {selectedText}
-                </motion.span>{" "}
+                </motion.span>
                 <br />
                 Welcome to Aetheria
             </h1>
@@ -45,8 +47,8 @@ const Hero = () => {
                 <br /> Join a vibrant community where ideas flourish and futures take flight.
             </p>
             <div className="hero-btns">
-                <Button text="Join" className="hero-btn join-btn blue-btn" />
-                <Button text="Donate" className="hero-btn donate-btn pink-btn" />
+                <Button text="Join" className="hero-btn join-btn blue-btn" icon="join"/>
+                <Button text="Donate" className="hero-btn donate-btn pink-btn" icon="donate"/>
             </div>
         </div>
     );
