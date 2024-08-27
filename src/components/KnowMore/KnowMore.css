@@ -1,0 +1,15 @@
+.knowmore{
+    display: flex;
+    width: 11rem;
+    padding: 0.8rem 1.5rem;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 1rem;
+    cursor: pointer;
+    color: #60697b;
+}
+.knowmore-icon{
+    font-size: larger;
+}

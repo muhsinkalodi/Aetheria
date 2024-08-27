@@ -4,10 +4,11 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    padding: 5rem 2rem 8rem;
+    padding: 5rem 2rem  7rem;
     background-image: url("../../assets/images/hero_bg.png");
-    background-position: 0 -4rem;
-    background-repeat: no-repeat;
+    background-position: -7rem -3rem;
+    background-size: 65%;
+    background-clip: padding-box;
 }
 .hero h1{
     text-align: center;
@@ -70,6 +71,11 @@
 }
 
 @media(max-width:1100px){
+    .hero{
+        background-size: 75%;
+        background-repeat: no-repeat;
+        background-position: 15vw 0;
+    }
     .hero p{
         width: 90%;
     }
@@ -77,8 +83,8 @@
 @media(max-width:650px){
     .hero{
         padding-left: 1rem;
-        background-size: 250%;
-        background-position: -15rem -3.5rem;
+        background-size: 150%;
+        background-position: -7rem -3rem;
     }
     .hero p{
         width: 100%;
@@ -92,6 +98,8 @@
 @media(max-width:500px){
     .hero{
         padding-left: 0.4rem;
+        padding-right: 0.4rem;
+        background-position:-6rem 1rem;
     }
     .hero-btns{
         flex-direction: column;
