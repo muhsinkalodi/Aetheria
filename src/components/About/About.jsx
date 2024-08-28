@@ -21,7 +21,7 @@ const About = () => {
                         to turn your ideas into reality. Step into a world where your ideas can thrive and make a
                         difference.
                     </p>
-                    <KnowMore />
+                    <KnowMore text="Know more"/>
                 </div>
             </div>
         </div>
